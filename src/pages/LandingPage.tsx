@@ -1,4 +1,4 @@
-import { Hero } from "@/components/main"
+import { Features, Hero } from "@/components/main"
 import { Header } from "@/components/UI"
 
 const LandingPage = () => {
@@ -6,6 +6,7 @@ const LandingPage = () => {
     <main>
       <Header />
       <Hero />
+      <Features />
     </main>
   )
 }
