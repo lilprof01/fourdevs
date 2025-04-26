@@ -6,13 +6,13 @@ const Hero = () => {
     <section className="bg-secondary flex justify-center items-center align-middle p-8 sm:px-20 py-14">
       <div className="h-full w-full flex flex-col lg:flex-row items-center align-middle gap-20">
         {/* left div */}
-        <div className="h-full w-full flex flex-col justify-center gap-5">
+        <div className="h-full w-full flex flex-col justify-center items-center lg:items-left text-center lg:text-left gap-5">
           <TrustedUser />
-          <h1 className="text-4xl sm:text-6xl font-medium">Building Digital <span className="text-primary">Solutions</span> For Every Vision</h1>
-          <p className="text-2xl text-text w-[90%]">Your Trusted Partner For Delivering High-Quality Gigs And Digital Solutions.</p>
-          <div className="flex items-center align-middle gap-9">
-            <CtaBtn style="py-3 px-8 whitespace-nowrap" text="Get Started" />
-            <p className="text-primary text-lg">Learn More &rarr;</p>
+          <h1 className="text-3xl sm:text-6xl font-medium">Building Digital <span className="text-primary">Solutions</span> For Every Vision</h1>
+          <p className="sm:text-2xl text-text w-[90%]">Your Trusted Partner For Delivering High-Quality Gigs And Digital Solutions.</p>
+          <div className="flex justify-center items-center align-middle gap-4 sm:gap-9">
+            <CtaBtn style="py-3 px-6 sm:px-8 whitespace-nowrap" text="Get Started" />
+            <p className="text-primary sm:text-lg">Learn More &rarr;</p>
           </div>
         </div>
 
