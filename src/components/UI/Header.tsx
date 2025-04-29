@@ -3,7 +3,7 @@ import logo from "/logo.png"
 
 const Header = () => {
   return (
-    <header className="w-full flex justify-between items-center align-middle py-5 px-20">
+    <header className="w-full flex justify-between items-center align-middle py-5 px-5 sm:px-20">
       <div className="h-full">
         <img alt="logo" src={logo} className="object-fit object-center" />
       </div>
@@ -15,7 +15,7 @@ const Header = () => {
           <li className="hover:text-primary transition-all duration-300 text-lg"><a href="#">Contact</a></li>
         </ul>
       </nav>
-      <CtaBtn style="hidden sm:block py-2 px-3.5" text="Submit a Gig" />
+      <CtaBtn style="sm:block py-2 px-3.5" text="Submit a Gig" />
     </header>
   )
 }
