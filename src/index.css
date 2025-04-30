@@ -1,5 +1,4 @@
 @import "tailwindcss";
-
 @theme {
   --color-primary : #5E240D;
   --color-secondary: #FBF1ED;
@@ -7,4 +6,10 @@
   --color-text: #5A5A5A;
   --font-inter: 'Inter', sans-serif;
   
+}
+
+.pElement{
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
