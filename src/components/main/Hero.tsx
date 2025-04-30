@@ -1,5 +1,4 @@
 import { CtaBtn, TrustedUser } from "../UI";
-import { Button } from "../UI/button";
 import heroImg from "/hero-img.png"
 
 const Hero = () => {
@@ -20,7 +19,6 @@ const Hero = () => {
         {/* right div */}
         <div className="h-full sm:w-[80%] lg:flex justify-center items-center align-middle">
           <img alt="hero image" src={heroImg} className="object-fit object-center" />
-          <Button>Button</Button>
         </div>
       </div>
     </section>

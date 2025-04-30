@@ -1,34 +1,66 @@
+import { useState } from "react";
 
-const faqs = [
-  {
-    question: " What kind of projects can I submit to FOURDEVS?",
-    answer: "lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  },
-  {
-    question: " How long does it take to get a response after submitting a gig?",
-    answer:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  },
-  {
-    question: "Do you work with clients outside of [insert country] or internationally?",
-    answer: "lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  },
-  {
-    question: "What happens after I submit my project?",
-    answer: "lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  },
-  {
-    question: " How can I track the status of my project?",
-    answer: "lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  },
-];
+const FAQ = () => {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-const Faq = () => {
+  const toggleAccordion = (index: number) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
+  const faqItems = [
+    {
+      question: "What kind of project can I submit to FOURDEV?",
+      answer: "Material Tailwind is a components library that combines the best of Material Design with Tailwind CSS."
+    },
+    {
+      question: "How long does it take to get a response after submiting a gigs?",
+      answer: "Install the package and import components as needed. Follow the official documentation for implementation details."
+    },
+    {
+      question: "Do you work for a client outside or inside a country or international?",
+      answer: "You can build beautiful, responsive UIs with pre-styled components that follow Material Design principles."
+    },
+    {
+      question: "What happens after I submit my project?",
+      answer: "You can build beautiful, responsive UIs with pre-styled components that follow Material Design principles."
+    },
+    {
+      question: "How can I track the status of my project?",
+      answer: "You can build beautiful, responsive UIs with pre-styled components that follow Material Design principles."
+    }
+  ];
+
   return (
-    <section className="px-10 lg:px-20 py-10">
-      
-    </section>
+    <div className="max-w-3xl mx-auto p-4 mt-10">
+      <p className="text-lg text-deep text-center mb-8">| FAQS</p>
+      <h1 className="max-sm:text-2xl text-4xl font-medium mb-5 text-center">Frequently Asked Questions</h1>
+      <p className='pElement text-center px-10 my-2.5 text-text max-sm:text-[20px] font-semibold'>Have a question about how FOURDEV work or what we offer we've got answer</p>
+      <div className="space-y-4">
+        {faqItems.map((item, index) => (
+          <div key={index} className="border mx-5 transform transition-transform border-gray-200 rounded-2xl overflow-hidden">
+            <button
+              className="cursor-pointer w-[100%] text-left flex justify-between items-center max-sm:p-2 p-3 px= bg-gray-50 transition-colors"
+              onClick={() => toggleAccordion(index)}
+            >
+              <h2 className="text-lg">{item.question}</h2>
+              <span
+                className="w-11 max-sm:h-11 max-sm:w-11 h-11 flex justify-center max-sm:text-3xl text-4xl font-bold rounded-full bg-black text-white"
+              >
+                {openIndex === index ? "−" : "+"}
+              </span>
+
+            </button>
+            
+            <div
+              className={`${openIndex === index ? "open" : "close"} overflow-hidden`}
+            >
+              <p className="px-4 pb-4 text-text max-sm:text-lg">{item.answer}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
   );
 };
 
-export default Faq;
+export default FAQ;
