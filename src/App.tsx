@@ -1,13 +1,12 @@
+import React from 'react';
 import './App.css'
-import { LandingPage } from './pages'
+import AppRouter from './Routes';
 
-function App() {
-
+const App: React.FC = () => {
+ 
   return (
-    <>
-      <LandingPage />
-    </>
-  )
-}
+    <AppRouter />
+  );
+};
 
-export default App
+export default App;
