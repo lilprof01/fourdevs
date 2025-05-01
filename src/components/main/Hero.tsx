@@ -3,7 +3,7 @@ import heroImg from "/hero-img.png"
 
 const Hero = () => {
   return (
-    <section className="bg-light flex justify-center items-center align-middle p-8 sm:px-20 py-14">
+    <section className="bg-light flex justify-center items-center align-middle px-10 lg:px-20 py-10">
       <div className="h-full w-full flex flex-col lg:flex-row items-center align-middle gap-20">
         {/* left div */}
         <div className="h-full w-full flex flex-col justify-center items-center lg:items-baseline text-center lg:text-left gap-5">
@@ -18,7 +18,7 @@ const Hero = () => {
 
         {/* right div */}
         <div className="h-full sm:w-[80%] lg:flex justify-center items-center align-middle">
-          <img alt="hero image" src={heroImg} className="object-fit object-center" />
+          <img alt="hero image" src={heroImg} className="object-fit object-center w-full" />
         </div>
       </div>
     </section>
