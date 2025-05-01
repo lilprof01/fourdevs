@@ -13,7 +13,7 @@ const Features = () => {
       <div className="text-center flex flex-col justify-center items-center md:w-[65%] gap-4 md:gap-8 m-auto mb-10">
         <h3 className="text-deep text-lg">Features |</h3>
         <h2 className="text-2xl md:text-4xl font-medium">What We Do</h2>
-        <p className="text-text md:text-xl"> From concept to execution, we deliver digital services that move your business forward — fast, flexible, and built to last.</p>
+        <p className="text-text md:text-xl">From concept to execution, we deliver digital services that move your business forward — fast, flexible, and built to last.</p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">

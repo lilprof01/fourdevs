@@ -45,7 +45,7 @@ const FAQ = () => {
             >
               <h2 className="text-lg">{item.question}</h2>
               <span
-                className={`w-11 max-sm:h-11 max-sm:w-11 h-11 flex justify-center items-center max-sm:text-3xl text-4xl font-bold rounded-full bg-black text-white`}
+                className={`sm:p-2 flex justify-center items-center rounded-full bg-black text-white`}
               >
                 <Plus size={30} className={`${openIndex === index ? "rotate-315" : ""} transition-transform duration-500`} />
               </span>
