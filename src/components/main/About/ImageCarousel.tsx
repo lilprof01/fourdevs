@@ -1,7 +1,8 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import "Swiper/css";
-import "Swiper/css/effect-coverflow";
 import { EffectCoverflow } from "swiper/modules";
+
+// import "swiper/css";
+// import "swiper/css/effects/coverflow";
 
 const images = [
   '/Images/aboutCard2.png', 
@@ -43,7 +44,7 @@ const Image = () => {
           slideShadows: false,
         }}
         modules={[EffectCoverflow]}
-        className="max-w-[1280px] mx-autoplace-content-center"
+        className="max-w-[1280px] mx-auto"
       >
         {images.map((src, index) => (
           <SwiperSlide key={index} className="rounded-xl grid overflow-hidden">
