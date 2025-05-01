@@ -34,13 +34,13 @@ const FAQ = () => {
   return (
     <div className="max-w-3xl mx-auto p-4 mt-10">
       <p className="text-lg text-deep text-center mb-8">| FAQS</p>
-      <h1 className="max-sm:text-2xl text-4xl font-medium mb-5 text-center">Frequently Asked Questions</h1>
-      <p className='pElement text-center px-10 my-2.5 text-text max-sm:text-[20px] font-semibold'>Have a question about how FOURDEV work or what we offer we've got answer</p>
+      <h1 className="text-2xl sm:text-4xl font-medium mb-5 text-center">Frequently Asked Questions</h1>
+      <p className='pElement text-center px-10 my-2.5 text-text text-base sm:text-xl font-semibold'>Have a question about how FOURDEV work or what we offer we've got answer</p>
       <div className="space-y-4">
         {faqItems.map((item, index) => (
           <div key={index} className="border mx-5 transform transition-transform border-gray-200 rounded-2xl overflow-hidden">
             <button
-              className="cursor-pointer w-[100%] text-left flex justify-between items-center max-sm:p-2 p-3 px= bg-gray-50 transition-colors"
+              className="cursor-pointer w-[100%] text-left flex justify-between items-center max-sm:p-2 p-3 bg-gray-50 transition-colors"
               onClick={() => toggleAccordion(index)}
             >
               <h2 className="text-lg">{item.question}</h2>
