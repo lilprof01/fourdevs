@@ -14,7 +14,7 @@ const ActionSection = () => {
         >
         <h1 className='text-2xl mb-5 max-sm:mb-2 text-white font-semibold about'>Ready</h1>
         <h1 className='text-3xl max-sm:text-2xl my-2 font-semibold text-center text-white z-20'>Have a Project in Mind? Let’s Build It</h1>
-        <p className='max-sm:text-[16px] text-xl text-zinc-300'>Whether you're launching a new product, or refreshing your brand presence, our team is equipped to guide and build alongside you from day one. We take your ideas seriously, craft with precision, and deliver with pride ensuring your digital vision becomes a high-impact reality.</p>
+        <p className='max-sm:text-[16px] text-xl text-zinc-300'>Whether you're launching a new product, or refreshing your brand presence, our team is equipped to guide and build alongside you from day one. We take your ideas seriously, craft with precision, and deliver with pride ensuring your digital vision becomes a high-impact reality.test</p>
         <div className='place-items-center mt-8 '>
             <CtaBtn style="hidden sm:block py-3 px-8 cursor-pointer" text="Submit a Gig" />
         </div>
