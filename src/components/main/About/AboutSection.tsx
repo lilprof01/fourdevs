@@ -2,7 +2,6 @@
 import Footer from '@/components/UI/Footer'
 import ActionSection from '@/components/UI/ActionSection'
 import Image from './ImageCarousel'
-import bgImage from '../../../assets/AboutImage.png'
 import FAQ from '../FAQ'
 
 const AboutSection = () => {
