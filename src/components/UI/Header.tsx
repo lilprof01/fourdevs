@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header className="w-full flex justify-between items-center align-middle py-5 px-20">
       <div className="h-full">
-        <img alt="logo" src={logo} className="object-fit object-center" />
+        <Link to={'/'}><img alt="logo" src={logo} title="logo-image" className="object-fit object-center" /></Link>
       </div>
       <nav className="hidden lg:block">
         <ul className="flex justify-between items-center align-middle gap-12">

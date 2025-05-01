@@ -1,7 +1,8 @@
 // import React from 'react'
+import Footer from '@/components/UI/Footer'
 import FAQ from './FAQ'
 import Image from './ImageCarousel'
-import bgImage from '../../../assets/AboutImage.png'
+import ActionSection from '@/components/UI/ActionSection'
 
 const AboutSection = () => {
   return (
@@ -11,7 +12,7 @@ const AboutSection = () => {
       </main>
       <div className='max-sm:px-10 px-20 lg:px-28'>
         <h1 className='font-semibold text-5xl max-sm:text-3xl capitalize text-center'>Who we are</h1>
-        <p className='mt-10 pElement text-zinc-800 max-sm:text-[16px] text-xl font-semibold'>FOURDEVS is a dynamic digital services agency built to deliver. From startups to established companies, we help ambitious teams build world-class software, design intuitive exepriences, and streamline their digital operations. We're not just task excutors-we are creative partners committed to the full life cycle of your project.</p>
+        <p className='mt-10 pElement text-zinc-800 max-sm:text-[16px] text-xl font-semibold text-center'>FOURDEVS is a dynamic digital services agency built to deliver. From startups to established companies, we help ambitious teams build world-class software, design intuitive exepriences, and streamline their digital operations. We're not just task excutors-we are creative partners committed to the full life cycle of your project.</p>
       </div>
 
       <main>
@@ -63,17 +64,12 @@ const AboutSection = () => {
         <FAQ/>
       </div>
 
-      <div className='bg-'>
-        </div>
+      <div>
+        <ActionSection/>
+      </div>
 
-      <div className='mx-20 w-[50%] text-center h-[40vh] brightness-70 rounded-2xl text-white place-content-center' style={{ 
-        backgroundImage: `url(${bgImage})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center'
-      }}>
-        <h1 className='text-3xl font-semibold text-center text-white z-20'>Have a Project in Mind? Let’s Build I</h1>
-        <p>Whether you're launching a new product, or refreshing your brand presence, our team is equipped to guide and build alongside you from day one. We take your ideas seriously, craft with precision, and deliver with pride ensuring your digital vision becomes a high-impact reality.</p>
-      
+      <div>
+        <Footer/>
       </div>
     </div>
   )
