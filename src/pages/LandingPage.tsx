@@ -1,4 +1,4 @@
-import { Features, Hero, Testimonial, WhyChooseUs, FAQ } from "@/components/main";
+import { Features, Hero, Testimonial, WhyChooseUs } from "@/components/main";
 import { Header } from "@/components/UI";
 const LandingPage = () => {
   return (
@@ -7,7 +7,7 @@ const LandingPage = () => {
       <Hero />
       <Features />
       <WhyChooseUs />
-      <FAQ />
+      {/* <FAQ /> */}
       <Testimonial />
     </main>
   );
