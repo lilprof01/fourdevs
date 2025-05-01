@@ -5,7 +5,7 @@ interface BtnProps{
 
 const CtaBtn: React.FC<BtnProps> = ({ style, text }) => {
   return (
-    <button className={`${style} bg-deep text-white rounded-full`}>
+    <button className={`${style} bg-primary text-white rounded-full cursor-pointer`}>
       {text}
     </button>
   )
