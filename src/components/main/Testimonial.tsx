@@ -1,6 +1,6 @@
 import { TestimonialsCard } from "../UI"
 
-const testimonial = () => {
+const Testimonial = () => {
   return (
     <section className="px-10 lg:px-20 py-10">
       <div className="text-center flex flex-col justify-center items-center md:w-[65%] gap-4 md:gap-8 m-auto mb-10">
@@ -18,4 +18,4 @@ const testimonial = () => {
   )
 }
 
-export default testimonial
+export default Testimonial
