@@ -1,6 +1,7 @@
 // import FAQ from '../FAQ'
 import Image from './ImageCarousel'
 import bgImage from '../../../assets/AboutImage.png'
+import FAQ from '../FAQ'
 
 const AboutSection = () => {
   return (
@@ -59,7 +60,7 @@ const AboutSection = () => {
       </main>
       
       <div>
-        {/* <FAQ /> */}
+        <FAQ />
       </div>
 
       <div className='bg-'>
