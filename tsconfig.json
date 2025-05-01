@@ -1,13 +1,16 @@
-{
-  "compilerOptions": {
-    "types": ["node", "swiper"],
-    "forceConsistentCasingInFileNames": true,
-    "strict": true
-  },
-  
+{  
   "files": [],
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
-  ]
+  ],
+  "compilerOptions": {
+    "types": ["node", "swiper"],
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
 }

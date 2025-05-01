@@ -1,8 +1,9 @@
-// import React from 'react'
+
 import Footer from '@/components/UI/Footer'
-import FAQ from './FAQ'
-import Image from './ImageCarousel'
 import ActionSection from '@/components/UI/ActionSection'
+import Image from './ImageCarousel'
+import bgImage from '../../../assets/AboutImage.png'
+import FAQ from '../FAQ'
 
 const AboutSection = () => {
   return (
@@ -12,7 +13,7 @@ const AboutSection = () => {
       </main>
       <div className='max-sm:px-10 px-20 lg:px-28'>
         <h1 className='font-semibold text-5xl max-sm:text-3xl capitalize text-center'>Who we are</h1>
-        <p className='mt-10 pElement text-zinc-800 max-sm:text-[16px] text-xl font-semibold text-center'>FOURDEVS is a dynamic digital services agency built to deliver. From startups to established companies, we help ambitious teams build world-class software, design intuitive exepriences, and streamline their digital operations. We're not just task excutors-we are creative partners committed to the full life cycle of your project.</p>
+        <p className='mt-10 pElement text-text max-sm:text-[16px] text-xl font-semibold text-center'>FOURDEVS is a dynamic digital services agency built to deliver. From startups to established companies, we help ambitious teams build world-class software, design intuitive exepriences, and streamline their digital operations. We're not just task excutors-we are creative partners committed to the full life cycle of your project.</p>
       </div>
 
       <main>
@@ -61,7 +62,7 @@ const AboutSection = () => {
       </main>
       
       <div>
-        <FAQ/>
+        <FAQ />
       </div>
 
       <div>
