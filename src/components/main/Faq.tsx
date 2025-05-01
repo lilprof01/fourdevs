@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import {Plus} from "lucide-react"
 
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -31,29 +32,30 @@ const FAQ = () => {
   ];
 
   return (
-    <div className="max-w-2xl mx-auto p-4 mt-10">
-      <h1 className="max-sm:text-2xl text-5xl font-semibold mb-5 text-center">Frequently Asked Questions</h1>
-      <p className='pElement px-7 my-2.5 text-zinc-800 max-sm:text-[15px] font-semibold'>Have a question about how FOURDEV work or what we offer we've got answer</p>
+    <div className="max-w-3xl mx-auto p-4 mt-10">
+      <p className="text-lg text-deep text-center mb-8">| FAQS</p>
+      <h1 className="max-sm:text-2xl text-4xl font-medium mb-5 text-center">Frequently Asked Questions</h1>
+      <p className='pElement text-center px-10 my-2.5 text-text max-sm:text-[20px] font-semibold'>Have a question about how FOURDEV work or what we offer we've got answer</p>
       <div className="space-y-4">
         {faqItems.map((item, index) => (
           <div key={index} className="border mx-5 transform transition-transform border-gray-200 rounded-2xl overflow-hidden">
             <button
-              className="w-[100%] text-left flex justify-between items-center max-sm:p-2 p-3 px= bg-gray-50 transition-colors"
+              className="cursor-pointer w-[100%] text-left flex justify-between items-center max-sm:p-2 p-3 px= bg-gray-50 transition-colors"
               onClick={() => toggleAccordion(index)}
             >
-              <h2 className="w-[82%] text-[18px] font-medium">{item.question}</h2>
+              <h2 className="text-lg">{item.question}</h2>
               <span
-                className="w-11 max-sm:h-11 max-sm:w-11 h-11 flex justify-center max-sm:text-3xl text-4xl font-bold rounded-full bg-black text-white"
+                className={`sm:p-2 flex justify-center items-center rounded-full bg-black text-white`}
               >
-                {openIndex === index ? "−" : "+"}
+                <Plus size={30} className={`${openIndex === index ? "rotate-315" : ""} transition-transform duration-500`} />
               </span>
 
             </button>
             
             <div
-              className={`px-4 pb-4 ${openIndex === index ? "block" : "hidden"}`}
+              className={`${openIndex === index ? "open" : "close"} overflow-hidden`}
             >
-              <p className="text-gray-700 max-sm:text-[17px]">{item.answer}</p>
+              <p className="px-4 pb-4 text-text max-sm:text-lg">{item.answer}</p>
             </div>
           </div>
         ))}

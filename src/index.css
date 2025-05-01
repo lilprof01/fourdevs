@@ -1,15 +1,26 @@
 @import "tailwindcss";
 @theme {
-  --color-primary : #5E240D;
-  --color-secondary: #FBF1ED;
+  --color-deep : #5E240D;
+  --color-light: #FBF1ED;
   --color-shade: #0C0C0CE5;
   --color-text: #5A5A5A;
   --font-inter: 'Inter', sans-serif;
-  
+
 }
 
-.pElement{
+/* .pElement{
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
+} */
+
+.open {
+  max-height: 100px;
+  opacity: 1;
+  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+.close {
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }

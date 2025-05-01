@@ -10,10 +10,10 @@ const Header = () => {
       </div>
       <nav className="hidden lg:block">
         <ul className="flex justify-between items-center align-middle gap-12">
-          <li className="hover:text-primary transition-all duration-300 text-lg"><a href="/">Home</a></li>
-          <li className="hover:text-primary transition-all duration-300 text-lg"><Link to="/about">About Us</Link></li>
-          <li className="hover:text-primary transition-all duration-300 text-lg"><a href="services">Services</a></li>
-          <li className="hover:text-primary transition-all duration-300 text-lg"><a href="contact">Contact</a></li>
+          <li className="hover:text-deep transition-all duration-300 text-lg"><Link to="/">Home</Link></li>
+          <li className="hover:text-deep transition-all duration-300 text-lg"><Link to="/about">About Us</Link></li>
+          <li className="hover:text-deep transition-all duration-300 text-lg"><a href="services">Services</a></li>
+          <li className="hover:text-deep transition-all duration-300 text-lg"><a href="contact">Contact</a></li>
         </ul>
       </nav>
       <CtaBtn style="sm:block py-2 px-3.5" text="Submit a Gig" />
