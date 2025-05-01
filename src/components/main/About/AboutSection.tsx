@@ -60,7 +60,7 @@ const AboutSection = () => {
       </main>
       
       <div>
-        <FAQ/>
+        <FAQ />
       </div>
 
       <div className='bg-'>
