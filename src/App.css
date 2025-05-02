@@ -1,9 +1,0 @@
-.aboutText::before{
-    content: '|';
-    font-size: 1.2rem;
-    color: black;
-    font-weight: 500;
-    position: relative;
-    bottom: 3px;
-    left: -4px;
-}
