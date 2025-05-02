@@ -1,6 +1,6 @@
 // src/App.tsx
 import React from 'react';
-import { LandingPage } from './pages';
+import { LandingPage, Service } from './pages';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Error from './components/main/Error';
 import About from './components/main/About/Page';
@@ -13,6 +13,9 @@ const AppRouter: React.FC = () => {
     },
     {
       path: '/about', element: <About/>,
+    },
+    {
+      path: '/service', element: <Service/>,
     }
   ])
   return (
