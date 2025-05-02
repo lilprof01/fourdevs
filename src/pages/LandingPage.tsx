@@ -7,7 +7,7 @@ const LandingPage = () => {
     <main>
       <Header />
       <Hero />
-      <Features />
+      <Features miniTitle="Features |" title="What We Do" />
       <WhyChooseUs />
       <FAQ />
       <Testimonial />

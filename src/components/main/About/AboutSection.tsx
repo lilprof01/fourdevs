@@ -4,11 +4,15 @@ import ActionSection from '@/components/UI/ActionSection'
 import Image from './ImageCarousel'
 import FAQ from '../FAQ'
 
-const AboutSection = () => {
+interface AboutSectionProps {
+  miniTitle?: string;
+}
+
+const AboutSection: React.FC<AboutSectionProps> = ({ miniTitle }) => {
   return (
     <div>
       <main className='text-center mt-10 mb-10'>
-        <p className="text-lg text-deep text-center mb-8">| About Us</p>
+        <p className="text-lg text-deep text-center mb-8">{miniTitle}</p>
       </main>
       <div className='max-sm:px-10 px-20 lg:px-28'>
         <h1 className='font-semibold text-5xl max-sm:text-3xl capitalize text-center'>Who we are</h1>

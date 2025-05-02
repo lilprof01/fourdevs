@@ -8,6 +8,51 @@
 
 }
 
+.links li {
+  position: relative;
+  padding: 6px 0px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.links li::before{
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 0;
+  background-color: var(--color-deep);
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+
+.links li:hover::before{
+  animation: grow 0.3s ease-in-out forwards;
+}
+
+/* .links li:not(:hover)::before{
+  animation: shrink 1s ease-in-out forwards;
+} */
+
+@keyframes grow{
+  0% {
+    width: 0;
+  }
+  100%{
+    width: 100%;
+  }
+}
+
+@keyframes shrink{
+  0% {
+    width: 100%;
+  }
+  100%{
+    width: 0;
+  }
+}
+
 .open {
   max-height: 300px;
   opacity: 1;

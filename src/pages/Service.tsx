@@ -7,7 +7,7 @@ const Service = () => {
   return (
     <main className="">
       <Header />
-      <Features />
+      <Features title="Check Our Previous Works" />
       <FAQ />
       <ActionSection />
       <Footer />
