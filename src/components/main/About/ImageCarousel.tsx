@@ -1,62 +1,56 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import "Swiper/css";
-import "Swiper/css/effect-coverflow";
-import { EffectCoverflow } from "swiper/modules";
+import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-const images = [
-  '/Images/aboutCard2.png', 
-  '/Images/about.png',
-  '/Images/aboutCard2.png', 
-  '/Images/about.png',
-  '/Images/aboutCard2.png', 
-  '/Images/about.png',
+// Image paths
+const imagePaths = [
+  "/Images/about.png",
+  "/Images/aboutCard2.png",
+  "/Images/about.png",
+  "/Images/aboutCard2.png",
+  "/Images/about.png",
 ];
 
-const Image = () => {
-  return (
-    <div className="w-full mt-10 px-4">
-      <Swiper
-        effect="coverflow"
-        grabCursor={true}
-        centeredSlides={false}
-        slidesPerView={5} // Default view shows 5 slides
-        spaceBetween={40}
-        breakpoints={{
-          320: {
-            slidesPerView: 1, // 1 slide on small screens
-            spaceBetween: 20
-          },
-          768: {
-            slidesPerView: 2, // 2 slides on medium screens
-            spaceBetween: 30
-          },
-          1024: {
-            slidesPerView: 3, // 3 slides on large screens
-            spaceBetween: 40
-          },
-        }}
-        coverflowEffect={{
-          rotate: 0,
-          stretch: 0,
-          depth: 100,
-          modifier: 2,
-          slideShadows: false,
-        }}
-        modules={[EffectCoverflow]}
-        className="max-w-[1280px] mx-autoplace-content-center"
-      >
-        {images.map((src, index) => (
-          <SwiperSlide key={index} className="rounded-xl grid overflow-hidden">
-          <img
-            src={src}
-            alt={`Slide ${index + 1}`}
-            className="rounded-xl h-[250px] w-full object-cover"
-          />
-        </SwiperSlide>
-        ))}
-      </Swiper>
-    </div>
-  );
+// Slider settings
+const settings = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 3, // Desktop view
+  slidesToScroll: 1,
+  autoplay: true,            // Enable autoplay
+  autoplaySpeed: 3000,       // 3 seconds
+  responsive: [
+    {
+      breakpoint: 824, // Tablet view
+      settings: {
+        slidesToShow: 2,
+      },
+    },
+    {
+      breakpoint: 568, // Mobile view
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+  ],
 };
 
-export default Image;
+const Carousel: React.FC = () => (
+  <div className="w-full overflow-hidden mt-7 px-5 relative pb-10">
+    <Slider {...settings}>
+      {imagePaths.map((src, i) => (
+        <div key={i}>
+          <img
+            src={src}
+            alt={`Slide ${i + 1}`}
+            className="w-[95%] h-[350px] sm:h-[390px] object-fit"
+          />
+        </div>
+      ))}
+    </Slider>
+  </div>
+);
+
+export default Carousel;
