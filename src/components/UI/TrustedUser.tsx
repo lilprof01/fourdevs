@@ -1,7 +1,7 @@
 const TrustedUser = () => {
   return (
     <div className="w-fit bg-white rounded-full p-1 shadow-xl">
-      <div className="bg-secondary flex items-center align-middle rounded-full p-1">
+      <div className="bg-light flex items-center align-middle rounded-full p-1">
         <div className="rounded-full flex">
           <div className="bg-[url(/avatar/Image.svg)] bg-cover bg-center h-10 w-10 rounded-full"></div>
           <div className="bg-[url(/avatar/Image-1.svg)] bg-cover bg-center h-10 w-10 rounded-full -ml-4"></div>
