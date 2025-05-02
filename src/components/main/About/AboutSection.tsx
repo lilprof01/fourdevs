@@ -8,7 +8,7 @@ const AboutSection = () => {
   return (
     <div>
       <main className='text-center mt-10 mb-10'>
-        <h1 className='text-2xl text-primary font-semibold aboutText'>About Us</h1>
+        <p className="text-lg text-deep text-center mb-8">| About Us</p>
       </main>
       <div className='max-sm:px-10 px-20 lg:px-28'>
         <h1 className='font-semibold text-5xl max-sm:text-3xl capitalize text-center'>Who we are</h1>
@@ -20,7 +20,7 @@ const AboutSection = () => {
       </main>
 
       <div className='max-sm:px-4 text-center px-20 lg:px-28 mt-16'>
-        <h1 className='text-2xl mb-3 max-sm:mb-1 text-center text-primary font-semibold aboutText'>Why We Exist</h1>
+        <p className="text-lg text-deep text-center mb-8">| Why We Exist</p>
         <h2 className='text-center max-sm:text-3xl font-semibold text-5xl capitalize'>Our Mission</h2>
         <p className='mt-10 max-sm:mt-5 pElement text-zinc-800 max-sm:text-[16px] text-xl font-semibold'>Our mission is simple - to transform complex ideals into powerful digital products that perfom. We believe in creating solution that are not just functional, but scalable, beautiful and future ready.</p>
       </div>
