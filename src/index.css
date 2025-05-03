@@ -4,6 +4,7 @@
   --color-light: #FBF1ED;
   --color-shade: #0C0C0CE5;
   --color-text: #5A5A5A;
+  --color-lightGray: #F2F2F2;
   --font-inter: 'Inter', sans-serif;
 
 }
@@ -15,6 +16,7 @@
 
 .open {
   max-height: 500px;
+  color: #75432f;
   opacity: 1;
   transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
