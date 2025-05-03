@@ -61,25 +61,25 @@ const Footer = () => {
           <div className="flex flex-col gap-3">
             <Link
               className="hover:underline transform hover:translate-x-2 text-[16px] text-text transition-all"
-              to={""}
+              to={"/"}
             >
               Home
             </Link>
             <Link
               className="hover:underline transform hover:translate-x-2 text-[16px] text-text transition-all"
-              to={""}
+              to={"/about"}
             >
               About
             </Link>
             <Link
               className="hover:underline transform hover:translate-x-2 text-[16px] text-text transition-all"
-              to={""}
+              to={"/service"}
             >
               Services
             </Link>
             <Link
               className="hover:underline transform hover:translate-x-2 text-[16px] text-text transition-all"
-              to={""}
+              to={"/contact"}
             >
               Submit a Gig
             </Link>

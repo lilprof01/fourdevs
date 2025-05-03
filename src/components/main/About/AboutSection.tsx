@@ -1,5 +1,3 @@
-
-import Footer from '@/components/UI/Footer'
 import ActionSection from '@/components/UI/ActionSection'
 import Image from './ImageCarousel'
 import FAQ from '../FAQ'
@@ -70,10 +68,6 @@ const AboutSection: React.FC<AboutSectionProps> = ({ miniTitle }) => {
 
       <div>
         <ActionSection/>
-      </div>
-
-      <div>
-        <Footer/>
       </div>
     </div>
   )

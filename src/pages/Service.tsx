@@ -1,16 +1,20 @@
 import { FAQ, Features } from "@/components/main"
-import { Header } from "@/components/UI"
+import { ScrollToTop } from "@/components/UI"
 import ActionSection from "@/components/UI/ActionSection"
-import Footer from "@/components/UI/Footer"
+import { useOutletContext } from "react-router-dom"
+
+interface LayoutContext {
+  setOpenNav: React.Dispatch<React.SetStateAction<boolean>>;
+}
 
 const Service = () => {
+  const { setOpenNav } = useOutletContext<LayoutContext>();
   return (
-    <main className="">
-      <Header />
+    <main onClick={() => setOpenNav(false)}>
+      <ScrollToTop />
       <Features title="Check Our Previous Works" />
       <FAQ />
       <ActionSection />
-      <Footer />
     </main>
   )
 }
