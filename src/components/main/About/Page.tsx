@@ -1,9 +1,9 @@
-import { Header } from "@/components/UI"
+import { ScrollToTop } from "@/components/UI"
 import AboutSection from "./AboutSection"
 const About = () => {
   return (
     <div>
-      <Header/>
+      <ScrollToTop />
       <AboutSection/>
     </div>
   )

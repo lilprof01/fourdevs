@@ -9,11 +9,171 @@
 
 }
 
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.mobile-nav {
+  /* background-color: rgba(255, 255, 255, 0.285); */
+  backdrop-filter: blur(50px);
+  z-index: 10;
+}
+
+.mobile-links {
+  position: relative;
+}
+
+.mobile-links::before {
+  content: "";
+  height: 100%;
+  width: 5px;
+  background-color: var(--color-deep);
+  position: absolute;
+  right: 0;
+  top: 0;
+  visibility: hidden;
+}
+
+.mobile-links:hover::before {
+  visibility: visible;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.mobile-links.active::before {
+  visibility: visible;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.open-nav {
+  display: flex;
+  animation: open 1s ease-in-out forwards;
+}
+
+.close-nav {
+  /* animation: close 1s ease-in-out forwards; */
+  display: none;
+}
+
+@keyframes open {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* @keyframes close {
+  from {
+    display: flex;
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+    display: none;
+  }
+} */
+
+/* hamburger animation */
+.burger1 {
+  animation: down-rotate 0.5s ease-out forwards;
+}
+
+@keyframes down-rotate {
+  0% {
+    margin-bottom: 6px;
+  }
+  100% {
+    margin-bottom: -3px;
+    rotate: 45deg;
+    width: 32px;
+  }
+}
+
+.burger2 {
+  animation: up-rotate 0.5s ease-out forwards;
+}
+
+@keyframes up-rotate {
+  0% {
+    margin-top: 6px;
+  }
+  100% {
+    margin-top: -6px;
+    rotate: -45deg;
+    width: 32px;
+  }
+}
+
+.burger-1 {
+  animation: down-rotate-off 0.5s ease-out forwards;
+}
+
+@keyframes down-rotate-off {
+  0% {
+    margin-bottom: -6px;
+    rotate: 45deg;
+    width: 32px;
+  }
+  100% {
+    margin-bottom: 6px;
+    width: 48px;
+  }
+}
+
+.burger-2 {
+  animation: up-rotate-off 0.5s ease-out forwards;
+}
+
+@keyframes up-rotate-off {
+  0% {
+    margin-top: -6px;
+    rotate: -45deg;
+  }
+  100% {
+    margin-top: 6px;
+    width: 24px;
+  }
+}
+
+.show {
+  animation: return 1.5s ease-out;
+}
+
+@keyframes return {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* nav links animation */
 .links li {
   position: relative;
   padding: 6px 0px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+}
+
+.links li.active::before {
+  content: '';
+  width: 10%;
+}
+
+.links li.active:hover::before {
+  animation: none;
 }
 
 

@@ -1,14 +1,12 @@
-import { Header } from '@/components/UI'
-import Footer from '@/components/UI/Footer'
+import { ScrollToTop } from '@/components/UI'
 import Form from './Form'
 // import React from 'react'
 
 const Contact= () => {
   return (
     <div>
-      <Header/>
+      <ScrollToTop />
       <Form/>
-      <Footer/>
     </div>
   )
 }
