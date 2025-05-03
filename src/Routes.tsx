@@ -4,6 +4,7 @@ import { LandingPage, Service } from './pages';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Error from './components/main/Error';
 import About from './components/main/About/Page';
+import Contact from './components/main/Contact/Page';
 
 const AppRouter: React.FC = () => {
   const router = createBrowserRouter([
@@ -16,6 +17,9 @@ const AppRouter: React.FC = () => {
     },
     {
       path: '/service', element: <Service/>,
+    },
+    {
+      path: '/contact', element: <Contact/>,
     }
   ])
   return (
