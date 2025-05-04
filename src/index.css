@@ -9,17 +9,13 @@
 
 }
 
-html {
-  overflow-x: hidden;
-}
-
-body {
-  overflow-x: hidden;
-  overflow-y: auto;
+.scroll-lock {
+  overflow: hidden !important;
+  touch-action: none;
+  overscroll-behavior: none;
 }
 
 .mobile-nav {
-  /* background-color: rgba(255, 255, 255, 0.285); */
   backdrop-filter: blur(50px);
   z-index: 10;
 }

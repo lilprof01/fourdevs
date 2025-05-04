@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import CtaBtn from "./CtaBtn";
 
 interface mobileNavProps {
   openNav: Boolean;
@@ -43,11 +42,6 @@ const MobileNav: React.FC<mobileNavProps> = ({ openNav, setOpenNav }) => {
           Contact
         </NavLink>
       </div>
-
-      <CtaBtn
-        style="py-2 px-3.5 w-[60%] ml-auto justify-self-end"
-        text="Submit a Gig"
-      />
     </nav>
   );
 };

@@ -9,18 +9,24 @@ const Layout: React.FC = () => {
     setOpenNav((prev) => !prev);
   };
 
-  useEffect (() => {
-    const body = document.querySelector("body") as HTMLBodyElement;
+  useEffect(() => {
+    const html = document.documentElement;
+    const body = document.body;
+  
     if (openNav) {
-      body.style.overflow = "hidden";
+      html.classList.add("scroll-lock");
+      body.classList.add("scroll-lock");
     } else {
-      body.style.overflow = "auto";
+      html.classList.remove("scroll-lock");
+      body.classList.remove("scroll-lock");
     }
-
+  
     return () => {
-      body.style.overflow = "auto";
+      html.classList.remove("scroll-lock");
+      body.classList.remove("scroll-lock");
     };
-  },[openNav])
+  }, [openNav]);
+  
 
   return (
     <main>
