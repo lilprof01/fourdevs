@@ -10,8 +10,6 @@ interface headerProps {
 
 const Header: React.FC<headerProps> = ({ openNav, handleOpenNav }) => {
   const pathName = useLocation();
-  console.log(pathName);
-  console.log(pathName.pathname);
   return (
     <header className="w-full flex justify-between items-center align-middle py-5 px-5 sm:px-20">
       <div className="h-full">
@@ -25,12 +23,12 @@ const Header: React.FC<headerProps> = ({ openNav, handleOpenNav }) => {
           <li className={`hover:text-deep transition-all duration-300 text-lg ${pathName.pathname === "/contact" ? 'active' : ''}`}><Link to="/contact">Contact</Link></li>
         </ul>
       </nav>
-      <CtaBtn style="hidden sm:block py-2 px-3.5" text="Submit a Gig" />
+      <CtaBtn style="hidden lg:block py-2 px-3.5" text="Submit a Gig" />
 
       {/* Hamburger menu */}
       <div
         onClick={handleOpenNav}
-        className={`hamburger h-10 w-10 sm:hidden flex flex-col justify-center items-end align-middle z-[100] hover:cursor-pointer`}
+        className={`hamburger h-10 w-10 lg:hidden flex flex-col justify-center items-end align-middle z-[100] hover:cursor-pointer`}
       >
         <div
           className={`h-1 w-12 bg-deep ${openNav ? "burger1" : "burger-1"}`}

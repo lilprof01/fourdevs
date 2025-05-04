@@ -1,14 +1,19 @@
-import { ScrollToTop } from '@/components/UI'
-import Form from './Form'
+import Form from "./Form";
+import { useOutletContext } from "react-router-dom";
 // import React from 'react'
 
-const Contact= () => {
-  return (
-    <div>
-      <ScrollToTop />
-      <Form/>
-    </div>
-  )
+interface LayoutContext {
+  setOpenNav: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-export default Contact
+const Contact = () => {
+  const { setOpenNav } = useOutletContext<LayoutContext>();
+
+  return (
+    <div onClick={() => setOpenNav(false)}>
+      <Form />
+    </div>
+  );
+};
+
+export default Contact;

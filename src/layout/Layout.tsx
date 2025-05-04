@@ -1,6 +1,5 @@
 import { Outlet } from "react-router-dom"
-import { Header, MobileNav } from "../UI"
-import Footer from "../UI/Footer"
+import { Header, MobileNav, ScrollToTop, Footer } from "../components/UI"
 import { useEffect, useState } from "react";
 
 const Layout: React.FC = () => {
@@ -25,6 +24,7 @@ const Layout: React.FC = () => {
 
   return (
     <main>
+      <ScrollToTop />
       <Header openNav={openNav} handleOpenNav={handleOpenNav} />
       <MobileNav openNav={openNav} setOpenNav={setOpenNav} />
       <Outlet context={{setOpenNav}} />
