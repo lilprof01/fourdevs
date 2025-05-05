@@ -8,7 +8,7 @@ import whatsapp from "/icons/whatsapp.svg";
 import logo from "/logo.png";
 
 const Footer = () => {
-    const currentYear = new Date().getFullYear();
+  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="px-10 lg:px-20 py-5 bg-[#F4F4F4]">
