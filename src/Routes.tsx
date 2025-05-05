@@ -3,8 +3,8 @@ import React from "react";
 import { LandingPage, Service } from "./pages";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Error from "./components/main/Error";
-import About from "./components/main/About/Page";
-import Contact from "./components/main/Contact/Page";
+import About from "./pages/About/Page";
+import Contact from "./pages/Contact/Page";
 import Layout from "./layout/Layout";
 
 const children = [

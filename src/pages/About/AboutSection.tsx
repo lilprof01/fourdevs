@@ -1,6 +1,6 @@
 import ActionSection from '@/components/UI/ActionSection'
 import Image from './ImageCarousel'
-import FAQ from '../FAQ'
+import FAQ from '../../components/main/FAQ'
 
 interface AboutSectionProps {
   miniTitle?: string;
