@@ -61,10 +61,10 @@ const Form: React.FC = () => {
 
       <form onSubmit={handleSubmit} className='mx-16 max-md:mx-5'>
         {/* Gig Form */}
-        <div className='flex justify-between items-center gap-4 mt-14 mb-6'>
-          <p className='font-semibold text-2xl max-sm:text-[18px]'>Gig Submission Form</p>
+        <div className='flex max-sm:flex-col justify-between items-center gap-4 mt-14 mb-6'>
+          <p className='font-semibold max-sm:w-[100%] text-2xl max-sm:text-[22px]'>Gig Submission Form</p>
           <select
-            className='border max-sm:w-[50%] rounded-xl py-1 px-2 bg-white border-gray-300 focus:outline-none focus:border-deep focus:ring-1 focus:ring-deep'
+            className='border max-sm:w-[100%] rounded-xl py-1 px-2 max-sm:text-[18px] bg-white border-gray-300 focus:outline-none focus:border-deep focus:ring-1 focus:ring-deep'
             name="gigForm"
             value={formData.gigForm}
             onChange={(e) => setFormData({ ...formData, gigForm: e.target.value })}
